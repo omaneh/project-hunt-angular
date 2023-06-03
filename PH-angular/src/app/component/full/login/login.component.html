@@ -1,0 +1,13 @@
+<main>
+        <div role="alert" class="error-message"></div>
+
+      <div role="alert" class="info-message"></div>
+    <form action="/login" method="POST">
+      <label for="email" >Email address:</label>
+      <input type="email" name="email" [(ngModel)]="email">
+      <label for="password">Password:</label>
+      <input type="password" id="password" [(ngModel)]="password">
+      <button type="submit" (click) = "formSubmission($event)">Submit</button>
+    </form>
+  </main>
+  
